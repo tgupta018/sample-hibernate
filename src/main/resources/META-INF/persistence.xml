@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+
+        <class>repo.AddressesEntity</class>
+        <class>repo.AddressUsagesEntity</class>
+        <class>repo.ApiRequestEntity</class>
+        <class>repo.AvailableLanguagesEntity</class>
+        <class>repo.CategoryTranslationsEntity</class>
+        <class>repo.CouponUsagesEntity</class>
+        <class>repo.OrdersEntity</class>
+        <class>repo.PersonsEntity</class>
+        <class>repo.CustomerIdentificationsEntity</class>
+        <class>repo.CustomerInterestsEntity</class>
+        <class>repo.OrderItemsEntity</class>
+        <class>repo.ProductsEntity</class>
+        <class>repo.ProductCategoriesEntity</class>
+        <class>repo.ProductCategoriesBaseEntity</class>
+        <class>repo.ProductsBaseEntity</class>
+        <class>repo.MembershipsEntity</class>
+        <class>repo.PersonInformationEntity</class>
+        <class>repo.MembershipsBaseEntity</class>
+        <class>repo.MembershipTranslationsEntity</class>
+        <class>repo.ProductImagesEntity</class>
+        <class>repo.SuppliersEntity</class>
+        <class>repo.CountryCodesEntity</class>
+        <class>repo.DiscountsBaseEntity</class>
+        <class>repo.DiscountTranslationsEntity</class>
+        <class>repo.EligibleDiscountsEntity</class>
+        <class>product.ProductsBaseEntity</class>
+        <class>product.ProductCategoriesBaseEntity</class>
+        <class>product.ProductImagesEntity</class>
+        <class>product.ProductTranslationsEntity</class>
+        <class>product.CategoryTranslationsEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
